@@ -6,7 +6,7 @@ tags:
   - hoi
   - hoi4
 date created: 2023-01-28 8:55:29
-date modified: 2023-02-22 2:39:32
+date modified: 2023-07-20 10:24:36
 ---
 
 # 钢铁雄心 4 笔记
@@ -201,6 +201,29 @@ MOD ID：1945216852
 
 ---
 ## <span id="hoi4_mod_develop">Mod 编写</span>
+
+---
+
+## <span id="hoi4_gui">界面相关</span>
+
+### <span id="hoi4_gui_politicsview">政治面板</span>
+
+`interface` 目录下有一个文件 `countrypoliticsview.gui`，这个就是「政治」面板的界面文件。
+
+其中最开始一段，`size`这个是政治界面的窗口大小设置，`height`的`100%%`设置不要乱改，不然`idea`多时，拉不到底部，这样「idea」显示不全了。
+
+```gui
+containerWindowType = {
+		name = "countrypoliticsview"
+		position = { x=-606 y=78}	
+		show_position = { x=-6 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300	
+		size = { width=550 height=100%% }
+```
+
+
 
 ---
 
